@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    android:elevation="10dp"
+    android:layout_height="200dp">
+<RelativeLayout
+       android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:id="@+id/parent"
+    android:background="@drawable/bbbb">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:visibility="gone"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/media_container"
+        android:text="This is the title"/>
+
+
+    <RelativeLayout
+        android:layout_below="@id/title"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+
+        android:scaleType="center"
+        android:id="@+id/media_container">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_menu_gallery" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_volume_up_grey_24dp"
+            android:layout_gravity="end|bottom"
+            android:id="@+id/volume_control"
+            android:alpha="0"
+            android:animateLayoutChanges="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"/>
+
+<!--        <ProgressBar-->
+<!--            android:id="@+id/progressBar"-->
+<!--            style="?android:attr/progressBarStyle"-->
+<!--            android:layout_width="81dp"-->
+<!--            android:layout_height="76dp"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:visibility="gone" />-->
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

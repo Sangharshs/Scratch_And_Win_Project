@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.cashii.SplashActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:elevation="10dp"
+        app:cardBackgroundColor="@android:color/black"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp">
+        <LinearLayout
+            android:background="@drawable/logo"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="140dp"
+            android:layout_height="140dp"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:layout_marginTop="20sp"
+        android:text="@string/win_real_cash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <com.agrawalsuneet.dotsloader.loaders.LazyLoader
+        android:layout_marginBottom="30dp"
+
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:id="@+id/lazyloader"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:lazyloader_animDur="800"
+        app:lazyloader_dotsDist="8dp"
+        app:lazyloader_dotsRadius="7dp"
+        app:lazyloader_firstDelayDur="150"
+        app:lazyloader_firstDotColor="#2196F3"
+        app:lazyloader_interpolator="@android:anim/decelerate_interpolator"
+        app:lazyloader_secondDelayDur="300"
+        app:lazyloader_secondDotColor="#FF0084"
+        app:lazyloader_thirdDotColor="#3F51B5" />
+
+</LinearLayout>

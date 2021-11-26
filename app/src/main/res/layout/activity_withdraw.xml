@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/bbbb"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cashii.WithdrawActivity">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        app:cardCornerRadius="20dp"
+        android:elevation="10dp"
+        app:cardBackgroundColor="@android:color/holo_orange_dark"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+<LinearLayout
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:background="@android:color/white"
+        android:layout_width="200dp"
+        android:layout_height="2dp"/>
+        <TextView
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Total Coins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <View
+        android:background="@android:color/white"
+        android:layout_width="200dp"
+        android:layout_height="2dp"/>
+        <TextView
+            android:id="@+id/total_coins_textView"
+            android:layout_gravity="center"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2,000"/>
+    <View
+        android:background="@android:color/white"
+        android:layout_width="200dp"
+        android:layout_height="2dp"/>
+
+    <View
+        android:background="@android:color/white"
+        android:layout_width="200dp"
+        android:layout_height="2dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/winamountinDollar"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="right"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs: "/>
+<!--        <view-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_height="wrap_content"/>-->
+        <TextView
+            android:id="@+id/winamountinRupees"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs. "/>
+    </LinearLayout>
+
+</LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="20dp"
+        android:elevation="10dp"
+        app:cardElevation="10dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:visibility="invisible"
+                android:layout_margin="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Rules"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <RadioGroup
+                android:orientation="horizontal"
+                android:id="@+id/radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+                <RadioButton
+                    android:textColor="@android:color/white"
+                    android:id="@+id/radio_paytm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Paytm"
+                    android:checked="true" />
+                <RadioButton
+                    android:textColor="@android:color/white"
+                    android:layout_marginStart="20sp"
+                    android:id="@+id/radio_paypal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Paypal" />
+            </RadioGroup>
+
+            </LinearLayout>
+
+            <EditText
+                android:background="@drawable/rounded_border"
+                android:layout_margin="20sp"
+                android:textColor="@android:color/white"
+                android:id="@+id/amount_editText"
+                android:hint="Enter Coins"
+                android:textColorHint="@android:color/white"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:background="@drawable/rounded_border"
+                android:layout_margin="20sp"
+                android:textColor="@android:color/white"
+                android:id="@+id/country_editText"
+                android:hint="Country"
+                android:textColorHint="@android:color/white"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:textColor="@android:color/white"
+                android:padding="15dp"
+                android:id="@+id/name_edit_text"
+                android:background="@drawable/rounded_border"
+                android:layout_margin="20sp"
+                android:hint="Enter Name"
+                android:textColorHint="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:background="@drawable/rounded_border"
+                android:layout_margin="20sp"
+                android:textColor="@android:color/white"
+                android:id="@+id/email_editText"
+                android:hint="Email"
+                android:textColorHint="@android:color/white"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:textColor="@android:color/white"
+                android:padding="15dp"
+                android:id="@+id/number_edit_text"
+                android:background="@drawable/rounded_border"
+                android:layout_margin="20sp"
+                android:hint="Phone Number"
+                android:textColorHint="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <Button
+                android:layout_marginBottom="30dp"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="bottom|center"
+                android:layout_width="200dp"
+                android:text="Submit"
+                android:id="@+id/submit"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/round"
+                android:backgroundTint="@color/colorAccent"
+                android:focusable="true"
+
+                android:layout_height="30dp"/>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <com.facebook.ads.NativeAdLayout
+
+        android:id="@+id/native_ad_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <androidx.cardview.widget.CardView
+    app:cardCornerRadius="20dp"
+    android:elevation="10dp"
+    app:cardElevation="10dp"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@android:color/holo_orange_light"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Rules"/>
+        <TextView
+            android:id="@+id/minimum_withdrawal_c"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:text=" 1. Minimum Withdrawal Coins:"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:text=" 2. Daily Task Limit Is 15.\n\n 3. Daily Scratch Limit 15.\n\n 4. Daily Rewarded Video Limit 10.\n\n 5.20 coins = 1 Rs."
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+</LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

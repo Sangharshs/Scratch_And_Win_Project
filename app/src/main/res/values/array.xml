@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="id_screenTitlesArray">
+
+        <item>Privacy Policy</item>
+        <item>Rate Us</item>
+        <item>Share App</item>
+        <item>More Apps</item>
+
+
+    </string-array>
+
+
+    <array name="id_screenIconsArray">
+
+        <item>@drawable/ic_baseline_security_24</item>
+        <item>@drawable/ic_baseline_star_rate_24</item>
+        <item>@drawable/ic_baseline_share_24</item>
+        <item>@drawable/ic_baseline_apps_24</item>
+
+
+
+    </array>
+</resources>

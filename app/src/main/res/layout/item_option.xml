@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:gravity="center"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="5dp"
+
+    android:paddingRight="24dp"
+    android:paddingLeft="24dp"
+    android:orientation="horizontal">
+   <LinearLayout
+   android:paddingRight="24dp"
+   android:paddingLeft="24dp"
+   android:orientation="horizontal"
+   android:layout_width="match_parent"
+   android:layout_height="56dp"
+   android:gravity="center">
+   <ImageView
+        android:id="@+id/option"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        tools:ignore="ContentDescription"/>
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Test"
+        android:id="@+id/option_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+</LinearLayout>
+</androidx.cardview.widget.CardView>

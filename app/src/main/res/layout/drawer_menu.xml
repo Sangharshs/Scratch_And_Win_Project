@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/drawer_M"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ImageView
+        android:layout_marginEnd="50sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50sp"
+        android:src="@drawable/logo"
+        android:layout_width="110dp"
+        android:layout_height="110dp"/>
+    <androidx.legacy.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/drawer_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <androidx.legacy.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+</LinearLayout>

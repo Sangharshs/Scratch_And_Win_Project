@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "805961697688",
+    "project_id": "cashii-93d2c",
+    "storage_bucket": "cashii-93d2c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:805961697688:android:1efb74de7e495cc8a903ed",
+        "android_client_info": {
+          "package_name": "com.cashii"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "805961697688-927t57udnhsdule53c5gm4uai6purfn6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgwM4pqv6lqKvLXHyN11dKHx63iWuBeHs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "805961697688-927t57udnhsdule53c5gm4uai6purfn6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
